@@ -66,8 +66,8 @@ if prompt := st.chat_input("Ex: What happens to Dr. Armstrong?"):
         full_response = ""
         
         try:
-            # Initialize the model
-            model = genai.GenerativeModel('gemini-1.5-flash')
+            # Try this first (The stable version)
+            model = genai.GenerativeModel('gemini-1.5-flash-001')
             
             # Construct the chat history for Gemini
             # We add the System Instruction as the first part of the prompt context
